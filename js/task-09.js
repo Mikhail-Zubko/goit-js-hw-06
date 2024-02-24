@@ -1,13 +1,13 @@
 const buttonBgChange = document.querySelector(".change-color")
 const colorSpan = document.querySelector(".color")
 
-buttonBgChange.addEventListener('click' , () => {
+buttonBgChange.addEventListener('click', () => {
   let hexColor = getRandomHexColor()
   document.body.style.backgroundColor = hexColor
   colorSpan.textContent = hexColor
 
-console.log('click');
-console.log(getRandomHexColor());
+  console.log('click');
+  console.log(getRandomHexColor());
 })
 
 function getRandomHexColor() {
